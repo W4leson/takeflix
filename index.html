@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Interface based netflix" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <header class="container-fluid bg-secondary p-2 fixed-top bg-transparent">
+      <div
+        class="col-md-12 d-flex flex-wrap justify-content-between align-items-center"
+      >
+        <div class="navbar-brand">TAKEFLIX</div>
+
+        <nav class="navbar-collapse col-md-5">
+          <ul class="navbar-nav navbar-expand">
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link text-light">Início</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link text-light">Séries</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link text-light">Filmes</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link text-light">Bombando</a>
+            </li>
+            <li class="nav-item m-2">
+              <a href="#" class="nav-link text-light">Minha lista</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="navbar-collapse col-md-3">
+          <ul class="navbar-nav navbar-expand">
+            <li class="nav-item m-2 text-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </li>
+            <li class="nav-item text-light m-2">Infantil</li>
+            <li class="nav-item m-2 text-light">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-bell"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                />
+              </svg>
+            </li>
+            <li class="nav-item text-light m-2">
+              <div id="profile" class="rounded"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container-fluid d-flex flex-column justify-content-center">
+      <section class="col-md-6 d-flex flex-column justify-content-center">
+        <h4 class="ml-5 text-light">THE</h4>
+        <h1 class="font-weight-bolder text-light">WALKING DEAD</h1>
+        <p class="text-light font-weight-bold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          blanditiis, aut veritatis eaque est, tempora nihil ab nemo alias nobis
+          voluptas ad, repellendus aliquam pariatur vitae! Adipisci corrupti
+          aliquam omnis.
+        </p>
+
+        <div>
+          <button class="btn btn-light font-weight-bolder">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-play-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+              />
+            </svg>
+            Assistir
+          </button>
+          <button class="btn btn-dark font-weight-bolder">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-info-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            Mais informações
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
